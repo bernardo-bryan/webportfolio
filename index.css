@@ -3,72 +3,133 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+html	{
+	scroll-behavior: smooth;
+}
 
-#navbarNav {
-
-	margin-left: 30%;
+#navmain {
+	border-bottom: solid 3px black;
+	
 }
 
 
-#navname {
 
+#navname {
+	
 	font-size: 1.5rem;
 }
 nav,h1{
 
-	font-family: "arvo", sans-serif ; 
+	font-family: "Roboto", sans-serif ; 
 	font-size: 1.5vh;
+	
 }
 
-#landtext1 h1, #landtext1 h2 {
-	font-family: "arvo", sans-serif;
-	font-size: 2.5vw;
-	text-align: center;
+
+#landtext1 h1 {
+	font-family: "Roboto", sans-serif;
+	font-size: 4.5vh;
+	color: #2a3c57;
+	text-shadow:  black .1vh .1vh ;
 }
+
+#landtextsub {
+
+	font-family: "Roboto", sans-serif;
+	font-size: 3.5vh;
+	color: #2a3c57;
+	text-shadow: white .1vh ,1vh;
+}
+
+
+
 
 
 #landtext2 h1, #landtext2 h2 {
-	font-family: "arvo", sans-serif;
-	font-size: 2.5vw;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 3.5vh;
+	color: white;
+	text-shadow: black .1rem .1rem;
 }
 
+#mainlanding
+{
+	background-image: linear-gradient(to top,  #1B2432 15%, white 85% );
 
-#mainlanding {
-  width: 100%;
-  height: 100vh;
-  background: linear-gradient(
-    to top,
-    #f9dcc4 40%,
-    #f9dcc4 50%,
-    whitesmoke 50%,
-    whitesmoke 100%
-  );
+	background-position: bottom;
+	width: 100%;
+	height: 50v
+	z-index: 2;
+}
+#landingpage {
+	background-image: url(https://w0.peakpx.com/wallpaper/992/887/HD-wallpaper-white-hexagon-abstract-decorative-hexagonal-hive-honeycomb-pattern-simple-tech-technology-white.jpg);
+	background-repeat: repeat-x;
+	background-position: center ;
+	width: 100%;
+	height: 50vh;
 } 
 
+#drpbtn1 {
+	height: 5vh;
+	width: 5vh;
+}
+#drpbtn2 {
+	height: 5vh;
+	width: 5vh;
+}
+
+
+#drpbtn1:hover {
+	transform: translateY(-5px);
+}
+#drpbtn2:hover {
+	transform: translateY(-5px);
+}
 
 #logo {
-	height: 7rem;
-	width: 7rem;
+	width: 70px;
 }
+
+#logo2, #logo3, #logo4, #logo5{
+	width: 70px !important; 
+}
+
+
 
 nav div ul {
 	text-transform: uppercase;
+
 }
 
-li:hover {
+nav li:hover {
 
-  color: white;
-  transform: translateY(-0.25em);
-  box-shadow: 0 0.5em 0.5em -0.4em black;
-  cursor: pointer;
+	color: white;
+	transform: translateY(-0.25em);
+	box-shadow: 0 0.5em 0.5em -0.4em black;
+	cursor: pointer;
+	transition-duration: .25s;
+	transition-timing-function: ease-out;
 }
 
 nav img:hover {
 
-  color: white;
-  transform: translateY(-0.25em) scale(1.1);
-  cursor: pointer;
+	color: white;
+	transform: translateY(-0.25em) scale(1.1);
+	cursor: pointer;
+
 }
+
+#logo2:hover, #logo3:hover, #logo4:hover, #logo5:hover
+{
+
+	color: white;
+	transform: translateY(-0.25em) scale(1.1);
+	cursor: pointer;
+
+}
+
+
 
 #social {
 	list-style: none;
@@ -77,8 +138,324 @@ nav img:hover {
 }
 
 #me {
-
-	width: 30%;
+	width: 35vh;
+	height: 35vh;
 	object-fit: cover;
-	object-position: 100% 0;
+	border: solid 2rem;
+	border-color:#1B2432;
+	border-style: ridge;
+}
+
+#abtimg1 {
+	width: 75vh;
+	height: 75vh;
+	object-fit: cover;
+}
+
+#abtimg2 {
+	width: 75vh;
+	height: 75vh;
+	object-fit: cover;
+}
+
+#abtimg3 {
+	width: 70vh;
+	height: 70vh;
+	object-fit: cover;
+}
+
+#abtme h1 {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 4vh;
+
+}
+
+#iam {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 4vh;
+}
+
+#abtlist1 {
+
+	
+	font-family: "Roboto", sans-serif;
+	font-size: 3vh;
+	
+}
+
+#abtlist1:hover {
+	box-shadow: 1B2432;
+	transform: translatex(2vh) ;
+	transition-duration: .5s;
+	transition-timing-function: ease-out;
+	transition-delay: .2s;
+	tra
+}
+
+
+#abtlist2 {
+
+
+	font-family: "Roboto", sans-serif;
+	font-size: 3vh;
+}
+
+#abtlist2:hover {
+	box-shadow: 1B2432;
+	transform: translatex(2vh) ;
+	transition-duration: .5s;
+	transition-timing-function: ease-out;
+	transition-delay: .2s;
+	tra
+}
+
+#abtlist3 {
+
+	
+	font-family: "Roboto", sans-serif;
+	font-size: 3vh;
+}
+
+#abtlist3:hover {
+	box-shadow: 1B2432;
+	transform: translatex(2vh) ;
+	transition-duration: .5s;
+	transition-timing-function: ease-out;
+	transition-delay: .2s;
+	tra
+}
+
+#abtlist4 {
+
+	
+	font-family: "Roboto", sans-serif;
+	font-size: 3vh;
+}
+
+#abtlist4:hover {
+	box-shadow: 1B2432;
+	transform: translatex(2vh) ;
+	transition-duration: .5s;
+	transition-timing-function: ease-out;
+	transition-delay: .2s;
+	tra
+}
+#abtmobileimg1 {
+	width: 25vh;
+	height: 25vh;
+	object-fit: cover;
+
+}
+
+/*#abtme {
+	 background-image: linear-gradient(white 95%, #1B2432 5%);*/
+	}
+
+
+	#abtmecontent ~ h2 {
+
+		font-family: "Roboto", sans-serif;
+		font-weight: 400;
+		font-size: 5vh;
+	}
+
+	#carousel1 {
+		box-shadow: #1B2432 .5rem 1rem ;
+	}
+
+	#dropbtn {
+		background-color: #04aa6d;
+		color: white;
+		padding: 16px;
+		font-size: 16px;
+		border: none;
+	}
+	#abtul1 {
+
+		list-style: none;
+		font-family: "Roboto", sans-serif;
+		font-size: 2vh;
+	}
+	#abtul2 {
+
+		list-style: none;
+		font-family: "Roboto", sans-serif;
+		font-size: 2vh;
+	}
+
+	#abtul3 {
+
+		list-style: none;
+		font-family: "Roboto", sans-serif;
+		font-size: 2vh;
+
+	}
+
+	#prjtitle {
+
+		font-family: "Roboto", sans-serif;
+		font-weight: 500;
+		font-size: 4vh;
+	}
+ 
+
+
+ #prjpics {
+
+ 	background-image: linear-gradient(to top,  #1B2432 15%, white 85% );
+ }
+
+ #act1, #act2, #act3, #act5 {
+ 	background-color: white;
+ 	border: solid black 3px;
+
+ }
+
+ #act1:hover {
+ 	transform: translateY(-0.5em);
+ 	transform: scale(1.15);
+	box-shadow: 0 0.5em 0.5em -0.4em black;
+	cursor: pointer;
+	z-index: 25;
+ } 
+
+ #act2:hover {
+ 	transform: translateY(-0.5em);
+ 	transform: scale(1.15);
+	box-shadow: 0 0.5em 0.5em -0.4em black;
+	cursor: pointer;
+	z-index: 25;
+ } 
+
+ #act3:hover {
+ 	transform: translateY(-0.50em);
+ 	transform: scale(1.15);
+	box-shadow: 0 0.5em 0.5em -0.4em black;
+	cursor: pointer;
+	z-index: 25;
+ } 
+
+
+ #act5:hover {
+ 	transform: translateY(-0.50em);
+ 	transform: scale(1.15);
+	box-shadow: 0 0.5em 0.5em -0.4em black;
+	cursor: pointer;
+	z-index: 25;
+
+ }
+#carousel2 {
+	background-image: linear-gradient(to top,  #1B2432 15%, white 85% );
+ }
+
+
+.carousel-inner>item>img {
+	margin: auto;
+}
+
+#tools {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 4vh;
+}
+
+#tp1, #tp2, #tp3, #tp4, #tp5, #tp6 {
+	font-family: "Roboto", sans-serif;
+	font-size: 2vh;
+	color: black;
+}
+
+#toolspage {
+
+}
+
+#tool1, #tool2, #tool3, #tool4, #tool5, #tool6 {
+	border-right: solid 2px #1B2432 ;
+	font-size: 2.5vh;
+	font-family: "Roboto", sans-serif;
+	color: black;
+
+}
+ #toolimg1:hover, #toolimg2:hover, #toolimg3:hover, #toolimg4:hover, #toolimg5:hover, #toolimg6:hover{
+ 	
+ 	transform: scale(1.1);
+	box-shadow: 0 0.5em 0.5em -0.4em black;
+	cursor: pointer;
+	z-index: 25;
+	transition-duration: .15s;
+	transition-timing-function: ease-out;
+ }
+
+
+ #contacts {
+background-image: linear-gradient(to top,  #1B2432 50%, white 50% );
+ }
+
+ #continfo {
+ 	float: right;
+ 	border: 2px solid black;
+ 	margin-right: 5vw;
+
+ }
+
+#message {
+	resize: none;
+	height: 15em;
+}
+
+#form {
+
+	box-shadow: .75em 0.75em 0.75em -0.4em black;
+
+}
+#contactnotes1 h2 {
+
+	font-family: "Roboto", sans-serif;
+	font-size: 3vw;
+	
+}
+#contactnotes1 h3{
+
+	font-family: "Roboto", sans-serif;
+	font-size:2.5vw;
+	
+}
+
+#contactnotes2 h3 {
+
+	font-family: "Roboto", sans-serif;
+	font-size: 3vw;
+	
+}
+#contactnotes2 p{
+
+	font-family: "Roboto", sans-serif;
+	font-size:2.5vw;
+	
+}
+
+
+
+#socmed2 {
+	list-style: none;
+}
+
+
+#contactlogo {
+
+	width: 10vw;
+	height: auto;
+}
+
+#contactitle {
+	font-family: "Roboto", sans-serif;
+	font-size: 4vh;
+	font-weight: 500;
+}
+
+#subbtn {
+	background-color:#1B2432 ;
+	color: white;
 }
